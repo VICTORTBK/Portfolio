@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Professional Software Engineer specializing in full-stack development with expertise in Forex trading and market analysis.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">AV</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-section="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#forex" class="nav-link" data-section="forex">Trading</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </li>
+            </ul>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hello, I'm <span class="text-gradient">Akoh Victor</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate Software Engineer crafting innovative digital solutions while mastering 
+                        the art of financial markets. I combine technical expertise with analytical thinking 
+                        to build exceptional software and execute profitable trading strategies.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-avatar">
+                        <div class="avatar-border"></div>
+                        <div class="avatar-image">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon" data-delay="0">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-icon" data-delay="1">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-icon" data-delay="2">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="floating-icon" data-delay="3">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    Driven by innovation and powered by continuous learning
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-story">
+                        <p>
+                            I'm a dedicated Software Engineer with a passion for creating robust, scalable applications 
+                            that solve real-world problems. My journey in technology has taken me through various domains, 
+                            from full-stack web development.
+                        </p>
+                        <p>
+                            Beyond coding, I've developed a keen interest in financial markets, particularly Forex trading. 
+                            This combination has taught me to think analytically, manage risk effectively, and make 
+                            data-driven decisions under pressure.
+                        </p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Clean Code Advocate</h4>
+                                <p>Writing maintainable, efficient, and well-documented code that stands the test of time.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-chart-trending-up"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Market Analyst</h4>
+                                <p>Applying technical analysis and risk management strategies in Forex trading.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Innovation Focused</h4>
+                                <p>Always exploring new technologies and methodologies to stay ahead of the curve.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1000">0</div>
+                            <div class="stat-label">Trading Hours</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Technologies Mastered</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">
+                    Technologies and tools I use to bring ideas to life
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="category-title">Frontend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="category-title">Backend Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">Lerning Soon...</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Lerning Soon...</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Express.js</span>
+                                <span class="skill-level">Lerning Soon...</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-level">Lerning Soon...</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"></div>
+                            </div>
+                        </div>
+                         <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Php/Laravel</span>
+                                <span class="skill-level">Lerning Soon...</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="category-title">Trading & Analysis</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Technical Analysis</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Risk Management</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="93"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Market Psychology</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Algorithmic Trading</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="72"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    A collection of projects that showcase my technical skills
+                </p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="trading">Trading Tools</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg" 
+                             alt="E-commerce Platform" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-icon" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="#" class="btn-icon" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="btn-icon" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <span class="project-status">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Full-stack e-commerce solution with advanced features including payment processing, 
+                            inventory management, and real-time analytics dashboard.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Php</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="trading">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" 
+                             alt="Trading Dashboard" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-icon" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="#" class="btn-icon" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="btn-icon" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Forex Analytics Dashboard</h3>
+                            <span class="project-status">In Progress</span>
+                        </div>
+                        <p class="project-description">
+                            Real-time trading analytics platform with advanced charting, risk management tools, 
+                            and automated trading signals based on technical indicators.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">js</span>
+                            <span class="tech-tag"></span>
+                            <span class="tech-tag"></span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg" 
+                             alt="Project Management App" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-icon" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="#" class="btn-icon" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="btn-icon" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Project Management Suite</h3>
+                            <span class="project-status">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive project management application with team collaboration, 
+                            task tracking, and real-time communication features.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Vuex</span>
+                            <span class="tech-tag">PWA</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="Asset/Screenshot 2025-08-04 at 11-35-22 QuickBite - Student Food Delivery.png" 
+                             alt="Social Media App" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-icon" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="http://127.0.0.1:5501/Frontend/html/index.html" class="btn-icon" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="btn-icon" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">QuickBite</h3>
+                            <span class="project-status">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Cross-platform mobile application for food lovers offering real-time ordering, dish sharing, and location-based restaurant discovery
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forex Trading Section -->
+    <section id="forex" class="forex">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Trading expertise</span>
+                <h2 class="section-title">Forex Trading Journey</h2>
+                <p class="section-subtitle">
+                    Combining technical analysis with disciplined risk management
+                </p>
+            </div>
+            
+            <div class="forex-content">
+                <div class="trading-approach">
+                    <div class="approach-card">
+                        <div class="approach-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Technical Analysis</h3>
+                        <p>
+                            Utilizing advanced charting techniques, candlestick patterns, and technical indicators 
+                            to identify high-probability trading opportunities in major currency pairs.
+                        </p>
+                        <ul class="approach-features">
+                            <li>Support & Resistance Analysis</li>
+                            <li>Trend Following Strategies</li>
+                            <li>Fibonacci Retracements</li>
+                            <li>Multi-timeframe Analysis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="approach-card">
+                        <div class="approach-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Risk Management</h3>
+                        <p>
+                            Implementing strict risk management protocols with proper position sizing, 
+                            stop-loss strategies, and portfolio diversification to preserve capital.
+                        </p>
+                        <ul class="approach-features">
+                            <li>Position Size Calculation</li>
+                            <li>Stop Loss & Take Profit</li>
+                            <li>Risk-Reward Optimization</li>
+                            <li>Drawdown Management</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="approach-card">
+                        <div class="approach-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Algorithmic Trading</h3>
+                        <p>
+                            Developing automated trading systems using Python and API integrations 
+                            to execute strategies with precision and remove emotional bias.
+                        </p>
+                        <ul class="approach-features">
+                            <li>Strategy Backtesting</li>
+                            <li>Automated Execution</li>
+                            <li>Performance Analytics</li>
+                            <li>Market Data Processing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="trading-performance">
+                    <h3>Trading Performance Metrics</h3>
+                    <div class="performance-grid">
+                        <div class="performance-card">
+                            <div class="performance-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="performance-data">
+                                <span class="performance-value">80.5%</span>
+                                <span class="performance-label">Win Rate</span>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-card">
+                            <div class="performance-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <div class="performance-data">
+                                <span class="performance-value">20.8:1</span>
+                                <span class="performance-label">Risk/Reward Ratio</span>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-card">
+                            <div class="performance-icon">
+                                <i class="fas fa-trending-up"></i>
+                            </div>
+                            <div class="performance-data">
+                                <span class="performance-value">60.2%</span>
+                                <span class="performance-label">Monthly ROI</span>
+                            </div>
+                        </div>
+                        
+                        <div class="performance-card">
+                            <div class="performance-icon">
+                                <i class="fas fa-chart-area"></i>
+                            </div>
+                            <div class="performance-data">
+                                <span class="performance-value">-8.5%</span>
+                                <span class="performance-label">Max Drawdown</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Ready to discuss your next project or explore trading opportunities
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Me</h4>
+                            <p>victorakoh260@gmail;.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Me</h4>
+                            <p>+2349066394248</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Nigeria Abuja zone 4.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="web-development">Web Development Project</option>
+                            <option value="mobile-development">Mobile App Development lerning Soon..</option>
+                            <option value="trading-consultation">Trading Consultation</option>
+                            <option value="collaboration">Collaboration Opportunity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required 
+                                  placeholder="Tell me about your project or inquiry..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-text">AV</span>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Trading Consultation</a></li>
+                            <li><a href="#">Technical Analysis</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <div class="footer-social">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Akoh victor. All rights reserved.</p>
+                <p>Crafted with passion and precision</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="./js/utils.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/typing-effect.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

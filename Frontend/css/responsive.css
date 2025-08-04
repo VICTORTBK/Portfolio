@@ -1,0 +1,509 @@
+/* Mobile First Responsive Design */
+
+/* Extra Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    padding: 0 var(--spacing-4);
+  }
+  
+  /* Typography */
+  .hero-title {
+    font-size: var(--font-size-4xl);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-3xl);
+  }
+  
+  /* Navigation */
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    box-shadow: var(--shadow-lg);
+    flex-direction: column;
+    padding: var(--spacing-6);
+    gap: var(--spacing-6);
+    z-index: var(--z-index-dropdown);
+  }
+  
+  .nav-menu.active {
+    display: flex;
+  }
+  
+  .nav-toggle {
+    display: flex;
+  }
+  
+  .nav-toggle.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .nav-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  /* Hero Section */
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+    text-align: center;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  /* About Section */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+  
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Skills Section */
+  .skills-grid {
+    gap: var(--spacing-6);
+  }
+  
+  .category-header {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-3);
+  }
+  
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+  }
+  
+  .projects-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Forex Section */
+  .trading-approach {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+  }
+  
+  .performance-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-4);
+  }
+  
+  /* Contact Section */
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+    text-align: center;
+  }
+  
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .performance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    padding: 0 var(--spacing-6);
+  }
+  
+  /* Navigation */
+  .nav-menu {
+    display: flex;
+    position: static;
+    background: none;
+    box-shadow: none;
+    flex-direction: row;
+    padding: 0;
+    gap: var(--spacing-6);
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  /* Hero Section */
+  .hero-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-10);
+  }
+  
+  .hero-actions {
+    flex-direction: row;
+  }
+  
+  /* About Section */
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-10);
+  }
+  
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Skills Section */
+  .category-header {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .projects-filter {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  /* Forex Section */
+  .trading-approach {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .performance-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Contact Section */
+  .contact-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-10);
+  }
+  
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    padding: 0 var(--spacing-8);
+  }
+  
+  /* Hero Section */
+  .hero-title {
+    font-size: var(--font-size-5xl);
+  }
+  
+  /* About Section */
+  .about-content {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Forex Section */
+  .trading-approach {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Contact Section */
+  .contact-content {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+/* Extra Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container-xl);
+    padding: 0 var(--spacing-8);
+  }
+  
+  /* Hero Section */
+  .hero-title {
+    font-size: var(--font-size-6xl);
+  }
+  
+  /* Projects Section */
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Forex Section */
+  .trading-approach {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ultra Wide screens (1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: var(--container-2xl);
+  }
+  
+  .hero-content {
+    gap: var(--spacing-16);
+  }
+  
+  .about-content {
+    gap: var(--spacing-16);
+  }
+  
+  .contact-content {
+    gap: var(--spacing-16);
+  }
+}
+
+/* Height-based Media Queries */
+@media (max-height: 600px) {
+  .hero {
+    min-height: auto;
+    padding: var(--spacing-20) 0;
+  }
+  
+  section {
+    padding: var(--spacing-12) 0;
+  }
+}
+
+@media (min-height: 900px) {
+  .hero {
+    min-height: 100vh;
+  }
+}
+
+/* Orientation-based Media Queries */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero-content {
+    gap: var(--spacing-8);
+  }
+  
+  .hero-visual {
+    display: none;
+  }
+  
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .scroll-indicator,
+  .back-to-top,
+  .hero-visual,
+  .floating-icons {
+    display: none !important;
+  }
+  
+  .hero {
+    min-height: auto;
+    background: none !important;
+    color: var(--color-black) !important;
+  }
+  
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  
+  section {
+    padding: var(--spacing-8) 0;
+    page-break-inside: avoid;
+  }
+  
+  .section-title {
+    page-break-after: avoid;
+  }
+  
+  .card,
+  .project-card,
+  .approach-card {
+    box-shadow: none !important;
+    border: 1px solid var(--color-gray-300) !important;
+  }
+  
+  .btn {
+    border: 1px solid var(--color-black) !important;
+    background: none !important;
+    color: var(--color-black) !important;
+  }
+}
+
+/* High DPI Display Support */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-avatar,
+  .category-icon,
+  .highlight-icon,
+  .contact-icon {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .scroll-reveal-left,
+  .scroll-reveal-right,
+  .scroll-reveal-scale {
+    transition: none;
+  }
+  
+  .floating-icon {
+    animation: none;
+  }
+  
+  .hero-particles {
+    display: none;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background: rgba(17, 24, 39, 0.95);
+    border-bottom-color: var(--color-gray-700);
+  }
+  
+  .nav-menu {
+    background: var(--color-gray-800);
+  }
+  
+  .card,
+  .project-card,
+  .skill-category,
+  .contact-form,
+  .about-stats {
+    background: var(--color-gray-800);
+    color: var(--color-gray-100);
+  }
+  
+  .highlight-card,
+  .contact-card,
+  .skill-item {
+    background: var(--color-gray-700);
+  }
+}
+
+/* Focus and Accessibility */
+@media (prefers-reduced-motion: no-preference) {
+  .focus-visible:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--border-radius-base);
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    border: 2px solid var(--color-white);
+  }
+  
+  .text-gradient {
+    -webkit-text-fill-color: var(--color-primary);
+    background: none;
+  }
+  
+  .nav-link::after {
+    height: 3px;
+  }
+}
+
+/* Custom Breakpoint Utilities */
+.show-on-mobile {
+  display: block;
+}
+
+.show-on-tablet {
+  display: none;
+}
+
+.show-on-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .show-on-mobile {
+    display: none;
+  }
+  
+  .show-on-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .show-on-tablet {
+    display: none;
+  }
+  
+  .show-on-desktop {
+    display: block;
+  }
+}
+
+/* Container Queries (when supported) */
+@supports (container-type: inline-size) {
+  .projects-grid {
+    container-type: inline-size;
+  }
+  
+  @container (max-width: 600px) {
+    .project-card {
+      grid-column: span 1;
+    }
+  }
+}
